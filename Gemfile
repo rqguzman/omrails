@@ -20,6 +20,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# To avoid 'ArgumentError: invalid byte sequence in UTF-8' error
+gem 'rack-utf8_sanitizer'
+gem 'utf8-cleaner'
+
 group :production do
 	gem 'pg'
 end
